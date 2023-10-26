@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp603.project2.controllers.MainController">
+   <children>
+      <VBox layoutX="203.0" layoutY="116.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnHotelManagement" layoutX="203.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleHotelManagement" prefHeight="27.0" prefWidth="195.0" text="Hotel Management" />
+            <Button fx:id="btnRoomManagement" layoutX="203.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleRoomManagement" prefHeight="27.0" prefWidth="195.0" text="Room Management" />
+            <Button fx:id="btnBookingManagement" layoutX="203.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleBookingManagement" prefHeight="27.0" prefWidth="195.0" text="Booking Management" />
+            <Button fx:id="btnLogout" layoutX="203.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="27.0" prefWidth="195.0" text="Logout" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

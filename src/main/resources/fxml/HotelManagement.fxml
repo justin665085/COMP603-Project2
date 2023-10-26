@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="comp603.project2.controllers.HotelManagementController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <TableView fx:id="hotelTable" layoutX="26.0" layoutY="29.0" prefHeight="252.0" prefWidth="398.0">
+           <columns>
+               <TableColumn fx:id="hotelIDCol" prefWidth="75.0" text="Hotel ID" />
+               <TableColumn fx:id="hotelNameCol" prefWidth="75.0" text="Hotel Name" />
+               <TableColumn fx:id="locationCol" prefWidth="75.0" text="Location" />
+               <TableColumn fx:id="starRatingCol" prefWidth="75.0" text="Star Rating" />
+               <TableColumn fx:id="descriptionCol" prefWidth="75.0" text="Description" />
+           </columns>
+       </TableView>
+
+       <VBox layoutX="447.0" layoutY="59.0" spacing="20.0">
+         <children>
+             <Button fx:id="btnDeleteHotel" layoutX="439.0" layoutY="127.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="92.0" text="Delete Hotel" onAction="#deleteHotel" />
+             <Button fx:id="btnAddHotel" layoutX="439.0" layoutY="167.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="91.0" text="Add Hotel" onAction="#addHotel" />
+             <Button fx:id="btnUpdateHotel" layoutX="439.0" layoutY="213.0" mnemonicParsing="false" text="Update Hotel" onAction="#updateHotel" />
+             <Button fx:id="btnBack" mnemonicParsing="false" prefHeight="27.0" prefWidth="91.0" text="Back" onAction="#goBack" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

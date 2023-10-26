@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="comp603.project2.controllers.BookingDetailManagementController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView fx:id="bookingTable" layoutX="26.0" layoutY="29.0" prefHeight="252.0" prefWidth="562.0">
+            <columns>
+                <TableColumn fx:id="bookingIDCol" prefWidth="75.0" text="Booking ID" />
+                <TableColumn fx:id="startDateCol" prefWidth="75.0" text="Start Date" />
+                <TableColumn fx:id="endDateCol" prefWidth="75.0" text="End Date" />
+                <TableColumn fx:id="totalPriceCol" prefWidth="75.0" text="Total Price" />
+                <TableColumn fx:id="usernameCol" prefWidth="75.0" text="Username" />
+                <TableColumn fx:id="phoneNumberCol" prefWidth="94.0" text="Phone Number" />
+                <TableColumn fx:id="bookingDateCol" prefWidth="92.0" text="Booking Date" />
+            </columns>
+        </TableView>
+
+        <VBox layoutX="602.0" layoutY="57.0" prefHeight="168.0" prefWidth="109.0" spacing="20.0">
+            <children>
+                <Button fx:id="btnDeleteBooking" layoutX="439.0" layoutY="127.0" mnemonicParsing="false" onAction="#deleteBooking" prefHeight="27.0" prefWidth="114.0" text="Delete Booking" />
+                <Button fx:id="btnAddBooking" layoutX="439.0" layoutY="167.0" mnemonicParsing="false" onAction="#addBooking" prefHeight="27.0" prefWidth="112.0" text="Add Booking" />
+                <Button fx:id="btnUpdateBooking" layoutX="439.0" layoutY="213.0" mnemonicParsing="false" onAction="#updateBooking" prefHeight="27.0" prefWidth="112.0" text="Update Booking" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
